@@ -1,0 +1,104 @@
+/* Basic reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and general styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* The card design */
+.card {
+    background: #ffffff;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card header (title section) */
+.card-header {
+    font-family: 'Kalam', cursive;
+    color: #000000; /* Black color for title */
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Card body for the message */
+.card-body {
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 18px 35px;
+    background-color: #FF6347;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0px 5px 25px rgba(255, 99, 71, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF4500;
+    box-shadow: 0px 5px 30px rgba(255, 69, 0, 0.6);
+}
+
+/* Footer (quote section) */
+.footer {
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    color: #000000; /* Black color for footer */
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .card-header {
+        font-size: 40px;
+    }
+
+    .card-body {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        font-size: 18px;
+    }
+}
